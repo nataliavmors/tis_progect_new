@@ -1,0 +1,6 @@
+<H2>{{ person_name }}</H2>
+<P>Страны: {{ countries }}.</P>
+<H3>Список фильмов</H3>
+{% for film in films %}
+<P><A href = http://37.46.128.78:6021/film/{{film["film_id"]}}>{{film["name"]}} - {{film["post_name"]}}</A></P>
+{% endfor %}

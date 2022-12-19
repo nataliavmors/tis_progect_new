@@ -1,0 +1,8 @@
+<H2>{{ film_name }}</H2>
+<P>Страна(ы): {{ countries }}.</P>
+<P>Жанр(ы): {{genres}}</P>
+<P>{{gen}}</P>
+<p>Люди, работавшие над фильмом:</p>
+{% for person in persons_list %}
+<P><A href = http://37.46.128.78:6021/person/{{person["id"]}}>{{person["person_name"]}} </A></P>
+{% endfor %}

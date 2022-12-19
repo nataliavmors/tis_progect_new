@@ -1,0 +1,4 @@
+<H3>Люди, задействованные в кино</H3>
+{% for person in persons_list %}
+<P><A href=person/{{person["id"]}}>{{ person["person_name"] }} </A></P>
+{% endfor %}
